@@ -90,6 +90,7 @@ public class ChooseFileMultiple {
             yesText.setOnClickListener(click);
             listView.setOnItemClickListener(listClick);
             pWindow = new PopupWindow(contentView, -1, -1);
+            pWindow.setAnimationStyle(R.style.pop_animation);
             pWindow.setInputMethodMode(PopupWindow.INPUT_METHOD_NEEDED);
             pWindow.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE);
             pWindow.setClippingEnabled(true);
